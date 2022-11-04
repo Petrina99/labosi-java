@@ -13,6 +13,10 @@ public class Zarulja {
         stanje = false;
     }
 
+    public boolean getStanje() {
+        return stanje;
+    }
+
     public static boolean PritisniPrekidac(boolean stanje) {
         return stanje == true ? false : true;
     }
