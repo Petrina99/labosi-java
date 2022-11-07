@@ -17,13 +17,13 @@ public class Zarulja {
         return stanje;
     }
 
-    public static boolean PritisniPrekidac(boolean stanje) {
-        return stanje == true ? false : true;
+    public void PritisniPrekidac() {
+        this.stanje = !this.stanje;
     }
 
-    public static void Provjeri(boolean stanje) {
+    public void Provjeri() {
 
-        if(stanje == true) {
+        if(this.stanje) {
             System.out.println("Svijetli");
         } else {
             System.out.println("Mrak je");
@@ -35,13 +35,13 @@ public class Zarulja {
 
         Zarulja Osram = new Zarulja();
 
-        Osram.Provjeri(Osram.stanje);
+        Osram.Provjeri();
 
-        Osram.stanje = Osram.PritisniPrekidac(Osram.stanje);
-        Osram.Provjeri(Osram.stanje);
+        Osram.PritisniPrekidac();
+        Osram.Provjeri();
 
-        Osram.stanje = Osram.PritisniPrekidac(Osram.stanje);
-        Osram.Provjeri(Osram.stanje);
+        Osram.PritisniPrekidac();
+        Osram.Provjeri();
 
     }
 }

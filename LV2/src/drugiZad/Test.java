@@ -21,7 +21,7 @@ public class Test {
         System.out.println(placaZ);
 
         int ukupnaZarada1 = zaposlenik.zaradaZaposlenika();
-        int ukupnaZarada2 = zaposlenik.ukupnaZarada(zaposlenik);
+        int ukupnaZarada2 = Zaposlenik.ukupnaZarada(zaposlenik);
 
         System.out.println(ukupnaZarada1);
         System.out.println(ukupnaZarada2);

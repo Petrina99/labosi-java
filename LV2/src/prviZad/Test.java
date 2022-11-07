@@ -3,16 +3,17 @@ package prviZad;
 public class Test {
 
     public static void main(String[] args) {
-        Zarulja Osram = new Zarulja();
 
-        boolean stanje = Osram.getStanje();
-        Osram.Provjeri(stanje);
+            Zarulja osram = new Zarulja();
 
-        stanje = Osram.PritisniPrekidac(stanje);
-        Osram.Provjeri(stanje);
+            osram.Provjeri();
 
-        stanje = Osram.PritisniPrekidac(stanje);
-        Osram.Provjeri(stanje);
+            osram.PritisniPrekidac();
+            osram.Provjeri();
+
+            osram.PritisniPrekidac();
+            osram.Provjeri();
+
     }
 
 }

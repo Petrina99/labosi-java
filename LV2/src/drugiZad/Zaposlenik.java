@@ -35,19 +35,11 @@ public class Zaposlenik {
     }
 
     public int zaradaZaposlenika() {
-        int ukupnaZarada;
-
-        ukupnaZarada = this.placa * this.staz * 12;
-
-        return ukupnaZarada;
+        return this.placa * this.staz * 12;
     }
 
     public static int ukupnaZarada(Zaposlenik zaposlenik) {
-        int ukupnaZarada;
-
-        ukupnaZarada = zaposlenik.placa * zaposlenik.staz * 12;
-
-        return ukupnaZarada;
+        return zaposlenik.placa * zaposlenik.staz * 12;
     }
 
     public static void main(String[] args) {
