@@ -7,6 +7,7 @@ public class CreateSeriazable {
     private ObjectOutputStream output;
     private ObjectInputStream input;
 
+    /* otvara stream za ispis podataka u datoteku*/
     public void openFileOutput(File file) {
         try {
             FileOutputStream f = new FileOutputStream(file, false);
@@ -16,6 +17,7 @@ public class CreateSeriazable {
         }
     }
 
+    // stream za ucitavanje podataka
     public void openFileInput(File file) {
         try {
             FileInputStream f = new FileInputStream(file);
@@ -34,6 +36,7 @@ public class CreateSeriazable {
         }
     }
 
+    // upisuje trenutni objekat u datoteku
     public void dodajStudenta(Student stud) {
         try {
             output.writeObject(stud);
@@ -43,6 +46,7 @@ public class CreateSeriazable {
 
     }
 
+    // iscitava trenutni objekat iz datoteke i vraca njihovu prosjecnu ocjenu
     public float iscitajStudenta() {
 
         Student stud = new Student();

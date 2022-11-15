@@ -99,6 +99,7 @@ public class Student implements Serializable {
 
         app.openFileOutput(file);
 
+        // istovremeno upisivanje studenata u niz i upisivanje u datoteku
         for (int i = 0; i < studenti.length; i++) {
             studenti[i] = upisStudenta(studenti[i], file);
             app.dodajStudenta(studenti[i]);
